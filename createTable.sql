@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS movies(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	address TEXT,
+	title TEXT,
+	link TEXT,
+	tag TEXT
+)

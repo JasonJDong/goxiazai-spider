@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<script type="text/javascript">
+function next () {
+    window.open("#nextPage",this);
+}
+function search () {
+    var input = document.getElementById('txtSearch');
+    window.open("http://192.168.1.227:3100/search/" + input.value);
+}
+</script>
+<style type="text/css">
+
+table.hovertable {
+
+    font-family: verdana,arial,sans-serif;
+
+    font-size:11px;
+
+    color:#333333;
+
+    border-width: 1px;
+
+    border-color: #999999;
+
+    border-collapse: collapse;
+
+}
+
+table.hovertable th {
+
+    background-color:#c3dde0;
+
+    border-width: 1px;
+
+    padding: 8px;
+
+    border-style: solid;
+
+    border-color: #a9c6c9;
+
+}
+
+table.hovertable tr {
+
+    background-color:#d4e3e5;
+
+}
+
+table.hovertable td {
+
+    border-width: 1px;
+
+    padding: 8px;
+
+    border-style: solid;
+
+    border-color: #a9c6c9;
+
+}
+
+.search{
+
+    font-size: 16;
+
+    font-family: cursive;
+}
+
+</style>
+</head>
+<body>
+<div><input id="txtSearch" type="text" class="search"/><button type="button" onclick="javascript:search()">Search</button></div>
+<table class="hovertable">
+<tr>
+<th><span>Title</span></th>
+<th><span>Links</span></th>
+<th><span>Tag</span></th>
+</tr>
+#rows
+</table>
+<a href="javascript:next()">Next</a>
+</body>
+</html>
